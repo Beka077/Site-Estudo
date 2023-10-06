@@ -1,0 +1,76 @@
+body {
+    font-family: monospace;
+}
+
+h1 {
+    margin-left: 80px;
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: #747373b4;
+    position: absolute;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px #060508;
+}
+
+:root {
+    --claro: linear-gradient(90deg, rgb(205, 195, 255) 0, rgb(145, 145, 248) 50%, rgb(92, 99, 201) 100%);
+    --escuro: linear-gradient(90deg, rgb(6, 6, 46) 50%, rgb(1, 8, 39) 100%);
+    --lilas: rgb(143, 143, 185);
+    --white: #e9e9e9;
+    --btnescuro: rgb(6, 6, 46);
+}
+
+.light-theme {
+    background: var(--claro);
+    color: var(--white);
+    --btnbg: var(--lilas);
+}
+
+.dark-theme {
+    background: var(--escuro);
+    color: var(--white);
+    --btnbg: var(--btnescuro);
+}
+
+.btn {
+    color: var(--white);
+    background-color: var(--btnbg);
+    border: none;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 28px;
+    left: 250px;
+    height: 31px;
+    width: 50px;
+    box-shadow: 2px 2px 5px #464545; 
+}
+
+.btn:hover {
+    cursor: pointer;
+}
